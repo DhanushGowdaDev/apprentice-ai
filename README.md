@@ -1,52 +1,61 @@
-\# Apprentice
+# Apprentice
 
+> **Show it once. It writes the skill.**
 
+Apprentice turns human demonstrations into reusable AI-agent skills.
 
-> \*\*Show it once. It writes the skill.\*\*
+Upload a video, image, or text demonstration → **Gemma 4** extracts the expertise → Apprentice compiles it into a structured `SKILL.md`.
 
-
-
-Apprentice is an open-source AI system that turns human expertise into reusable, validated Agent Skills.
-
-
-
-Instead of asking an expert to write documentation manually, Apprentice lets them describe how they perform a task. Gemma extracts the expertise into structured knowledge, a compiler generates a portable `SKILL.md`, and a validation layer checks whether critical information survived the compilation.
-
-
-
-\## How It Works
-
-
+## How it works
 
 ```text
-
-Human Demonstration
-
-&#x20;       ↓
-
-&#x20;     Gemma
-
-&#x20;       ↓
-
+Demonstration
+     ↓
+   Gemma 4
+     ↓
 Structured Expertise
+     ↓
+   SKILL.md
+     ↓
+Validation / Teach-back
+     ↓
+Human Approval
+     ↓
+Skill Commons
+```
 
-&#x20;       ↓
+## Features
 
-&#x20;  Skill Compiler
+- 🎥 Learn from demonstrations
+- 🧠 Expertise extraction with Gemma 4
+- 📝 Automatic `SKILL.md` generation
+- ✅ Skill validation
+- 🎯 Teach-back fidelity testing
+- 👤 Human approval
+- 📚 Skill Commons
 
-&#x20;       ↓
 
-&#x20;    SKILL.md
 
-&#x20;       ↓
+## Example
 
-&#x20;Teach-back Validation
+A person demonstrates how to tie a necktie.
 
-&#x20;       ↓
+Apprentice extracts:
 
-&#x20;  Fidelity Score
+- Purpose
+- Tools
+- Ordered steps
+- Reasons
+- Warnings
+- Common mistakes
+- Expert tips
 
-&#x20;       ↓
+Then generates:
 
-&#x20;    Certified Skill
+```text
+SKILL.md
+```
 
+## Built for HackFest@MLH
+
+**Human expertise → AI understanding → reusable agent skill.**
